@@ -14,10 +14,10 @@ for i in range(3):
     print(f"Anggota ke-{i+1}:")
     nama = input("Nama: ")
     print(f"Rank: {ranks_list}")
-    rank = input("Input Rank: ")
+    rank = input("Input Rank: ").title()
     while rank not in ranks_list and "Hashira" not in rank:
-        print("Rank tidak valid!")
-        rank = input(f"Silakan pilih dari daftar berikut:\n{ranks_list}\natau gelar Hashira spesifik\nInput rank: ")
+        print("Rank tidak valid! Silakan pilih dari daftar atau masukkan gelar Hashira spesifik.")
+        rank = input(f"Input rank: ").title()
     power = int(input("Power (1-100): "))
     
     nama_list.append(nama)
